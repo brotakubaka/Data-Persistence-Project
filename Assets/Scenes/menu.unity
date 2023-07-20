@@ -557,7 +557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d94bfd529ba37749abe157f8f7a3f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNameInput: {fileID: 65125017}
 --- !u!1 &837229556
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,7 +732,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 799316284}
         m_TargetAssemblyTypeName: UIMenuManager, Assembly-CSharp
-        m_MethodName: SetPlayerName
+        m_MethodName: StorePlayerName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1015,7 +1014,7 @@ GameObject:
   - component: {fileID: 1263325226}
   - component: {fileID: 1263325225}
   m_Layer: 0
-  m_Name: DataTransfer
+  m_Name: MainManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1034,7 +1033,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
-  playerScore: 0
+  currentScore: 0
+  highScore: 0
+  highScoreName: 
 --- !u!4 &1263325226
 Transform:
   m_ObjectHideFlags: 0
