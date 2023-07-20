@@ -72,5 +72,23 @@ public class GameManager : MonoBehaviour
     {
         m_GameOver = true;
         GameOverText.SetActive(true);
+        CheckBestPlayer();
+    }
+
+    void CheckBestPlayer()
+    {
+        if (m_Points > MainManager.Instance.highScore)
+        {
+            MainManager.Instance.highScore = m_Points;
+            MainManager.Instance.highScoreName = MainManager.Instance.playerName;
+
+            MainManager.Instance.SaveHighScore(MainManager.Instance.highScore, MainManager.Instance.highScoreName);
+
+            Debug.Log("New High Score: " + MainManager.Instance.highScore);
+        }
+        else
+        {
+
+        }
     }
 }

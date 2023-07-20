@@ -453,6 +453,7 @@ GameObject:
   - component: {fileID: 799316281}
   - component: {fileID: 799316280}
   - component: {fileID: 799316284}
+  - component: {fileID: 799316285}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -555,6 +556,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d94bfd529ba37749abe157f8f7a3f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &799316285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799316279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39bf5e50cece784288ff7fbed411b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &837229556
@@ -730,10 +743,10 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 799316284}
-        m_TargetAssemblyTypeName: UIMenuManager, Assembly-CSharp
+      - m_Target: {fileID: 799316285}
+        m_TargetAssemblyTypeName: UIPlayerDetails, Assembly-CSharp
         m_MethodName: StorePlayerName
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
